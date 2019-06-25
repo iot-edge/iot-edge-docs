@@ -1,0 +1,6 @@
+- [<i class="fa fa-home ico-hd"></i> Home](/#introduction)
+- [<i class="fa fa-user ico-hd"></i> User Guides](/guides/#user-guides)
+- [Site User](/guides/site-user/)
+- [Site Admin](/guides/site-admin/)
+- [Site Developer](/guides/site-developer/)
+- [Plugin Developer](/guides/plugin-developer/)

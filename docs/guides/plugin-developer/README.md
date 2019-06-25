@@ -1,0 +1,3 @@
+## Plugin Developer Guide {docsify-ignore}
+
+...here it is

@@ -1,0 +1,3 @@
+- [<i class="fa fa-home ico-hd"></i> Home](/ "Introduction to the IoT Edge server")
+- [<i class="fa fa-medal ico-hd"></i> Features](/features)
+- [<i class="fa fa-user ico-hd"></i> User Guides](/guides/)
