@@ -13,9 +13,9 @@ It uses
 - ![iot-edge](https://iot-edge.github.io/iot-edge-docs/_media/icon/iot-edge.png) [IoT-Edge](https://github.com/iot-edge/iot-edge) - Device management and automation plugins
 - ![graphite](https://iot-edge.github.io/iot-edge-docs/_media/icon/graphite.png) [Graphite](https://graphiteapp.org/) - Time-Series database for metrics storage
 - ![statsd](https://iot-edge.github.io/iot-edge-docs/_media/icon/statsd.png) [Statsd](https://www.npmjs.com/package/statsd) - Realtime metrics collection and aggregation
+- ![redis](https://iot-edge.github.io/iot-edge-docs/_media/icon/redis.png) [Redis](https://redis.io) - Performance database, text search, and more
 - ![loki](https://iot-edge.github.io/iot-edge-docs/_media/icon/loki.png) [Loki](https://grafana.com/loki) - Activity database for event and log storage
-- ![mosquitto](https://iot-edge.github.io/iot-edge-docs/_media/icon/mosquitto.png) [Mosquitto](https://mosquitto.org) - IoT sensor data bus
-- ![docsify](https://iot-edge.github.io/iot-edge-docs/_media/icon/docsify.png) [Docsify](https://docsify.js.org) - A magical documentation site generator
+- ![mosquitto](https://iot-edge.github.io/iot-edge-docs/_media/icon/mosquitto.png) [Mosquitto](https://mosquitto.org) - IoT sensor message bus
 - ![nginx](https://iot-edge.github.io/iot-edge-docs/_media/icon/nginx.png) [Nginx](https://www.nginx.com) - Enterprise grade routing, logging, and security
 
 ## Hardware
