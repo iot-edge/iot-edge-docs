@@ -4,28 +4,39 @@ This guide is for site developers - either consultants or in-house developers re
 
 ## Annotations
 
+### User Annotations
+
 [User Annotations](guides/site-user/?id=annotations) were introduced in the [User Guide](guides/site-user/)
 as a way for users to manage personal annotations.
 
-In addition to User annotations, developers can add System annotations - 
-notes created during system events that the user cannot edit.
+These notes are entered directly onto dashboard panels, and can be edited and deleted
+by users. It's a simple mechanism for noting anomalies found on charts.
 
-Two types of System annotations exist, depending on the method of storage/retrieval
+### System Annotations
 
-### Database annotations
+System annotations differ from user annotations in that the system generates them, and users
+generally don't have the ability to add, edit, or delete them.
 
-An annotation database comes installed, along with a Node-Red component for adding annotations from
-Node-Red flows, and an Edge API endpoint for authorized applications to add annotations.
+The IoT Edge server comes with two ways of creating system annotations
 
-TODO: Show Node-Red annotation node
+* **Stored annotations** - Site developers can send event logs into the Node-Red logging node
+when system events are detected. These logs have date/time stamps and can contain tags for
+associating events with places, devices, products, etc.
 
-TODO: Show an API call example
+* **Data sourced annotations** - Site developers can expose custom annotations in
+[custom data sources](guides/site-developer/?id=custom-data-sources) when event data is stored
+outside of these common annotation databases.
 
-### Custom annotations
+## Custom Data Sources
 
-Annotations can be placed onto Grafana charts by implementing an annotation endpoint in Node-Red.
-This lets services feed system annotations without having to add to the database at the time of
-the event. This is great for building dynamic annotations, or to prevent duplicating
-annotation data.
+Site **metrics** are stored in the [Graphite](https://graphiteapp.org/) time-series database,
+and site **events** are stored in the [Loki](https://grafana.com/loki) logging database.
+Both of these databases have built-in exposure to Grafana dashboards.
 
-Custom annotations can be built directly onto a Node-Red flow, or installed as a IoT Edge plugin.
+When data is stored outside of these standard databases, a custom
+[Grafana Data Source](https://grafana.com/docs/features/datasources/)
+can be built to expose that data to the Grafana UI.
+
+The IoT Edge server simplifies the process of getting custom data into dashboards
+with a built-in data source called **Edge API**. This lets site developers build
+Node-Red nodes to serve dashboard data without the complexity of writing a Grafana data source.
